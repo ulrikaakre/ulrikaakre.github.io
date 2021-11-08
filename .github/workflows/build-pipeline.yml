@@ -17,7 +17,10 @@ jobs:
           node-version: '14.x'
       - name: Install dependencies
         run: npm ci
-      # Step 3 - Add tests b
+      # Step 3 - Add tests and linting here
+      - name: Test this shit
+        run: npm install
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
